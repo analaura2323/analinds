@@ -1,0 +1,107 @@
+body {
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e9a7c1;
+    margin: 0;
+    font-family: 'Arial';
+}
+
+.menu {
+    background-color: #d4d4d4;
+    width: 100%;
+    margin-left: -20px;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+.menu a {
+    padding: 6px;
+    color: rgb(10, 10, 10);
+    font-weight: 10px;
+    font-family: 'Franklin Gothic Medium';
+    margin: auto;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.menu a:hover {
+    background-color:#ede0e5;
+    color: rgb(251, 0, 113);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.bt {
+    background-color: rgb(3, 205, 255);
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 25px;
+    font-family: 'Franklin Gothic Medium';
+    margin: auto;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bt:hover {
+    background-color:#e9a7c1;
+}
+
+.imagem {
+    width: 15px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: #e9a7c1;
+
+}
+
+button {
+    text-align: center;
+}
+.cardy {
+    background-color: rgb(243, 71, 152);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(248, 1, 120, 0.2);
+    text-align: center;
+    width: 200px;
+    margin: 20px;
+}
+.check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+    opacity: 1;
+}
+
+.check:hover svg {
+    stroke: var(--accent-color, #a3e583);
+}
+
+#cbx2:checked+.check svg {
+    stroke: var(--accent-color, #a3e583);
+}
+
+#cbx2:checked+.check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#cbx2:checked+.check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+
